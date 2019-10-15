@@ -1,5 +1,5 @@
 <p align="left">
-    <img src="/images/icon.png" style="width:64px;height:64px;"/>
+    <img src="/images/icon.png"/>
 </p>
 
 # ProfanityBot
