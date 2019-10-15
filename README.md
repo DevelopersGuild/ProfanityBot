@@ -1,3 +1,7 @@
+<p align="left">
+    <img src="/images/icon.png" style="width:64px;height:64px;"/>
+</p>
+
 # ProfanityBot
 This is a bot to prevent the use of profanity in our Discord.
 #### NOTE
@@ -9,4 +13,3 @@ You'll need to install the requirements.txt for the project.
     pip install -r requirements.txt
 ```
 after that, your good to go!
-
