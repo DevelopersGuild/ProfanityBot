@@ -3,10 +3,12 @@ WORKDIR /app/src
 COPY  . .
 
 # system project dependencies 
-RUN add-apt-repository universe
-RUN apt update
-RUN apt install libblas3 liblapack3 liblapack-dev libblas-dev
-RUN apt install gfortran
+RUN apt-get -y update
+RUN apt-get -y install software-properties-common
+RUN add-apt-repository -y universe
+RUN apt-get -y update
+RUN apt-get -y install libblas3 liblapack3 liblapack-dev libblas-dev
+RUN apt-get -y install gfortran
 # virtualenv
 RUN pip install virtualenv
 RUN virtualenv -p python3 env
