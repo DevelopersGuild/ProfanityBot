@@ -13,5 +13,5 @@ RUN apt-get -y install gfortran
 # RUN virtualenv -p python3 env
 # RUN source env/bin/activate
 # installing pip dependencies
-RUN pip install -r requirements.txt
+RUN bash install.sh
 CMD [ "python", "bot.py" ]
