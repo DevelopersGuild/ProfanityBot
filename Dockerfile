@@ -3,8 +3,8 @@ WORKDIR /app/src
 COPY  . .
 
 # system project dependencies 
-RUN sudo apt install libblas3 liblapack3 liblapack-dev libblas-dev
-RUN sudo apt install gfortran
+RUN apt install libblas3 liblapack3 liblapack-dev libblas-dev
+RUN apt install gfortran
 # virtualenv
 RUN pip install virtualenv
 RUN virtualenv -p python3 env
