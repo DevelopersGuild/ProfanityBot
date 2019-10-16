@@ -1,6 +1,7 @@
 FROM python:3-alpine3.10
 WORKDIR /app/src
 COPY  . .
+RUN apk add build-base
 RUN pip install virtualenv
 RUN virtualenv -p python3 env
 RUN source env/bin/activate
