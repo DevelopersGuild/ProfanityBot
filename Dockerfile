@@ -3,6 +3,8 @@ WORKDIR /app/src
 COPY  . .
 
 # system project dependencies 
+RUN add-apt-repository universe
+RUN apt update
 RUN apt install libblas3 liblapack3 liblapack-dev libblas-dev
 RUN apt install gfortran
 # virtualenv
