@@ -11,4 +11,5 @@ RUN apt-get -y install gfortran
 # installing pip dependencies
 RUN bash install.sh
 RUN pip install numpy scipy matplotlib ipython jupyter pandas sympy nose
+RUN apt-get install python-numpy
 CMD [ "python", "bot.py" ]
